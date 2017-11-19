@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<!-- Generated Nov 20, 2017 12:13:33 AM by Hibernate Tools 4.0.0.Final -->
+<hibernate-mapping>
+    <class name="com.happiestMinds.mappingDummy.FilesUpload" table="files_upload" catalog="fileUpload">
+        <id name="uploadId" type="java.lang.Integer">
+            <column name="upload_id" />
+            <generator class="identity" />
+        </id>
+        <property name="fileName" type="string">
+            <column name="file_name" length="128" />
+        </property>
+        <property name="fileData" type="binary">
+            <column name="file_data" />
+        </property>
+    </class>
+</hibernate-mapping>
